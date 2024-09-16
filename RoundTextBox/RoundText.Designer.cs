@@ -40,14 +40,16 @@
             this.textBox1.Location = new System.Drawing.Point(20, 20);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(110, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Resize += new System.EventHandler(this.textBox1_Resize);
             // 
             // RoundText
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.textBox1);
+            this.MinimumSize = new System.Drawing.Size(140, 50);
             this.Name = "RoundText";
             this.Size = new System.Drawing.Size(142, 64);
             this.ResumeLayout(false);

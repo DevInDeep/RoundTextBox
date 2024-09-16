@@ -79,6 +79,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RoundControl.resx">
+      <DependentUpon>RoundControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RoundText.resx">
       <DependentUpon>RoundText.cs</DependentUpon>
     </EmbeddedResource>
