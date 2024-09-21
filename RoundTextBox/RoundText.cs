@@ -1,13 +1,28 @@
-﻿using System.Drawing;
+﻿using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace RoundTextBox
 {
     public partial class RoundText : RoundControl
     {
-        public string MyText { get => textBox1.Text; set => textBox1.Text = value; }
-        public Color MyForeColor { get => textBox1.ForeColor; set => textBox1.ForeColor = value; }
-        public Font MyFont { get => textBox1.Font; set => textBox1.Font = value; }
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        [Browsable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        [Bindable(true)]
+        public override string Text { get => textBox1.Text; set => textBox1.Text = value; }
+        public override Color ForeColor { get => textBox1.ForeColor; set => textBox1.ForeColor = value; }
+        private Font _Font = UserControl.DefaultFont;
+        [Description("Sets the font of the button caption"),
+     Browsable(true),
+     Bindable(true),
+     EditorBrowsable(EditorBrowsableState.Always),
+     DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        public override Font Font
+        {
+            get { return _Font; }
+            set { textBox1.Font = _Font = base.Font = value; }
+        }
         public RoundText()
         {
             InitializeComponent();
