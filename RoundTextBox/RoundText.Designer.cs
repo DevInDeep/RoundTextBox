@@ -37,20 +37,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(20, 20);
+            this.textBox1.Location = new System.Drawing.Point(53, 48);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 20);
+            this.textBox1.Size = new System.Drawing.Size(293, 48);
             this.textBox1.TabIndex = 0;
             // 
             // RoundText
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.textBox1);
-            this.MinimumSize = new System.Drawing.Size(140, 50);
+            this.Margin = new System.Windows.Forms.Padding(21, 17, 21, 17);
+            this.MinimumSize = new System.Drawing.Size(373, 119);
             this.Name = "RoundText";
-            this.Size = new System.Drawing.Size(142, 64);
+            this.Size = new System.Drawing.Size(379, 153);
             this.ResumeLayout(false);
             this.PerformLayout();
 

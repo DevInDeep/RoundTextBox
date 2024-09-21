@@ -20,8 +20,8 @@ namespace RoundTextBox
      DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public override Font Font
         {
-            get { return _Font; }
-            set { textBox1.Font = _Font = base.Font = value; }
+            get { return base.Font; }
+            set { textBox1.Font = base.Font = value; }
         }
         public RoundText()
         {
