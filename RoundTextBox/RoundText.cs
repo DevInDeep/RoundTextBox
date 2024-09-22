@@ -13,11 +13,11 @@ namespace RoundTextBox
         public override string Text { get => textBox1.Text; set => textBox1.Text = value; }
         public override Color ForeColor { get => textBox1.ForeColor; set => textBox1.ForeColor = value; }
         private Font _Font = UserControl.DefaultFont;
-        [Description("Sets the font of the button caption"),
-     Browsable(true),
-     Bindable(true),
-     EditorBrowsable(EditorBrowsableState.Always),
-     DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        [Description("Sets the font of the button caption")]
+        [Browsable(true)]
+        [Bindable(true)]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public override Font Font
         {
             get { return base.Font; }
